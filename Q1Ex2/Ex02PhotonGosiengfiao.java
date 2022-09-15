@@ -1,7 +1,7 @@
 package Ex02;
 	import java.util.Scanner;
 
-public class Q1Ex02 {
+public class Ex02PhotonGosiengfiao {
 	public static void main(String[] args) {
 		Scanner an = new Scanner(System.in);
 		String setting1 = "Start game";
