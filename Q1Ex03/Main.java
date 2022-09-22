@@ -30,10 +30,16 @@ public class Main {
 		Jeep.setFavSong(heh);
 		Jeep.viewArtist();
 		
-		Jeep.performForAudience(500);
-		Jeep.viewArtist();
-		heh.viewSong();
+		//Jeep.performForAudience(100);
+		//Jeep.viewArtist();
+		//heh.viewSong();
 		
+		Venue WemSta = new Venue("Wembley Stadium");
+		WemSta.displayVenuePoints();
+		WemSta.levelUpAll(10);
+		WemSta.displayVenuePoints();
+		
+		Jeep.performForAudienceInVenue(1000, WemSta);
+		Jeep.viewArtist();
 	}
-	
 }

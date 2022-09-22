@@ -1,15 +1,16 @@
 public class Singer {
-	private String name;
+	private String nameSinger;
 	private int noOfPerformances;
-	private double earnings=0;
+	public double earnings=0;
 	private Song favoriteSong;
+	private Venue venVal;
 	
 	public Singer(String n) {
-		this.name = n;
+		this.nameSinger = n;
 	}
 	
 	public String getSinger() {
-		return name;
+		return nameSinger;
 	}
 	
 	public void setFavSong (Song s) {
@@ -17,14 +18,26 @@ public class Singer {
 	}
 	
 	public void viewArtist() {
-		System.out.printf("Artist %n%nName: %s %nNumber of Performances: %d %nEarnings: %.2f %nFavorite Song: %s %n%n", name, noOfPerformances, earnings, favoriteSong.getTitle());
+		System.out.printf("Artist %nName: %s %nNumber of Performances: %d %nEarnings: %.2f %nFavorite Song: %s %n%n", nameSinger, noOfPerformances, earnings, favoriteSong.getTitle());
 	}
 	
 	public void performForAudience(int audience) {
 		this.noOfPerformances  += 1;
-		this.favoriteSong.streams +=1;
 		for (int i=0; i<audience;i++) {
 			this.earnings += 100;
+			this.favoriteSong.streams +=1;
+		}
+	}
+	
+	public void performForAudienceInVenue(int audience, Venue vn) {
+		this.venVal=vn;
+		double venueVal = venVal.getVenueValue();
+		
+		this.noOfPerformances  += 1;
+		for (int i=0; i<audience;i++) {
+			this.earnings += (100 + venueVal*0.30);
+			this.earnings -= (venueVal*0.15);
+			this.favoriteSong.streams +=1;
 		}
 	}
 	

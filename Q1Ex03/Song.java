@@ -23,7 +23,7 @@ public class Song {
 	
 	
 	public void viewSong() {
-		System.out.printf("Song %n%nTitle: %s %nAlbum: %s %nArtist: %s %nStreams: %d %n%n", title, album, artist.getSinger(), streams);
+		System.out.printf("Song %nTitle: %s %nAlbum: %s %nArtist: %s %nStreams: %d %n%n", title, album, artist.getSinger(), streams);
 	}
 	
 }
