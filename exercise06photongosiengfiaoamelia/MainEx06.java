@@ -7,8 +7,8 @@ public class MainEx06 {
 		WaterType wt1 = new WaterType("Lapras", 1000, 100);
 		boolean undefeated = true;
 		
+		//fire type vs grass type
 		System.out.printf("%n%s will be fighting against %s. Let's see who will win!%n", ft1.getName(), gt1.getName());
-		
 		ft1.special();
 		gt1.special();
 		do {
@@ -23,9 +23,9 @@ public class MainEx06 {
 			ft1.attack(gt1);
 		} while (undefeated);
 		
+		//fire type vs water type
 		System.out.printf("%n%n%s will be fighting against %s. Let's see who will win!%n", ft1.getName(), wt1.getName());
 		undefeated = true;
-		
 		ft1.special();
 		wt1.special();
 		do {
@@ -47,9 +47,9 @@ public class MainEx06 {
 			
 		} while (undefeated);
 		
+		//grass type vs water type
 		System.out.printf("%n%n%s will be fighting against %s. Let's see who will win!%n", gt1.getName(), wt1.getName());
 		undefeated = true;
-		
 		wt1.special();
 		gt1.special();
 		do {
