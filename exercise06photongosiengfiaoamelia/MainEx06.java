@@ -33,12 +33,6 @@ public class MainEx06 {
 				undefeated = false;
 				ft1.restoreHealth();
 				wt1.restoreHealth();
-				 if (ft1.getHP()<=0) {
-					 
-				 } else if (wt1.getHP()<=0) {
-					 
-				 }
-				 
 				break;
 			}
 				

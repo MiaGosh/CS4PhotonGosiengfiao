@@ -7,7 +7,7 @@ public class GrassType extends Monster {
         def= base;
         monsterList.add(this);
         
-        System.out.printf("Congratulations! You just adopted a Grass type pokemon! The following are the stats:%n %s%n Max HP: %.2f %n Attack: %.2f%n Defense: %.2f%n%n", this.getName(), this.getMaxHP(), this.getAtk(), this.getDef());
+        System.out.printf("Congratulations! You just adopted a Grass type pokemon! The following are the stats:%n%s%nMax HP: %.2f %nAttack: %.2f%nDefense: %.2f%n%n", this.getName(), this.getMaxHP(), this.getAtk(), this.getDef());
     }
     
 	@Override
