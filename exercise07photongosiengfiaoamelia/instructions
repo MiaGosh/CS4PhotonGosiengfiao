@@ -1,0 +1,13 @@
+Considering that all Monsters should have a type, convert the Monster class into an abstract class and change special to an abstract method.
+Considering that all Characters should be either a Trainer or an NPC, convert the Character class into an abstract class
+Define an interface Interactive and implement it on the NPC, Location and Monster classes
+	Declare a method interact, return type void.
+		NPC interact: prints the dialog
+		Location interact: prints the specialty of the location
+		Monster interact: prints the name and type of the monster
+	Add a method inspect(Interactive i) to the Trainer class
+		The inspect method simply calls the interact method of the Interactive object
+In the main method:
+	You may remove the code from the previous exercise.
+	Create a Trainer, Monster, NPC, and Location.
+	Have the Trainer interact with each.
